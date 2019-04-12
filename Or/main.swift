@@ -12,6 +12,16 @@ let one = Or<String,Int>(1)
 let a = Or<String,Int>("a")
 let b = Or<String,Int>("b")
 
+let zero1 = zero.value() as String?
+print(zero1) // nil
+let zero2 = zero.value() as Int?
+print(zero2) // Optional(0)
+
+let a1 = a.value() as String?
+print(a1) // Optional("a")
+let a2 = a.value() as Int?
+print(a2) // nil
+
 print("""
 zero == zero is \(zero == zero)
 zero != zero is \(zero != zero)
