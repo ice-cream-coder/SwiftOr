@@ -25,25 +25,13 @@ let a2 = a.value() as Int?
 print(a2) // nil
 ```
 
-### You can also use compare two `Or` instances
+### You can also compare two `Or` instances
 ```
-print("""
-zero == zero is \(zero == zero)
-zero != zero is \(zero != zero)
-zero != one is \(zero != one)
-zero < one is \(zero < one)
-one < zero is \(one < zero)
-zero < a is \(zero < a)
-a < b is \(a < b)
-b < a is \(b < a)
-a == a is \(a == a)
-a != a is \(a != a)
-a != b is \(a != b)
-zero == a is \(zero == a)
-zero != a is \(zero != a)
-""")
+print(zero == zero) // true
+print(zero < one) // true
+print(zero < b) // false
 ```
-Note: If the value inside of the `Or` instances are diffrent type the comparison always returns false.
+Note: If the value inside of the `Or` instances are diffrent types the comparison always returns false.
 
 ## Use Case: 
 
